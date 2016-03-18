@@ -22,12 +22,13 @@ html,body{height:100%}
   js = d.createElement(s); js.id = id;
   js.src = "//connect.facebook.net/ko_KR/sdk.js#xfbml=1&version=v2.5";
   fjs.parentNode.insertBefore(js, fjs);
-}(document, 'script', 'facebook-jssdk'));</script>
+}(document, 'script', 'facebook-jssdk'));
+function fbshare() {
+window.open("http://www.facebook.com/sharer/sharer.php?u=" + location.href, "facebookTest", "resizable=no, width=500, height=300, scrollbars=no");
+</script>
 
 <div class="fb-share-button" data-href="http://tindomiel.github.io/sharer/" data-layout="button_count"></div>
-<input type="button" data-href="http://tindomiel.github.io/sharer/" onclick="(function(){
-window.open("http://www.facebook.com/sharer/sharer.php?u=" + location.href, "facebookTest", "resizable=no, width=850, height=600, scrollbars=no");
-})();"></div>
+<input type="button" value="페이스북 공유" data-href="http://tindomiel.github.io/sharer/" onclick="fbshare()"></div>
 
 <table width="800" cellpadding="0" cellspacing="0" border="0" style="background-color:#33373e;font-family:'돋움',dotum,applegothic,sans-serif" align="center">
 <tr><td colspan="3" height="55" style="font-size:0;line-height:0">&nbsp;</td></tr>
